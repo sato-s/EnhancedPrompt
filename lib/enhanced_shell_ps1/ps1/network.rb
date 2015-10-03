@@ -1,8 +1,7 @@
 require 'socket'
 
 class EnhancedShellPs1::PS1
-
-  class Network < Base
+  class Base::Network
 
     def initialize
       _ip_list
@@ -12,9 +11,14 @@ class EnhancedShellPs1::PS1
       @hostname ||= Socket.gethostname
     end
 
-    def ip
-      @ip ||= global_ipv4
-      @ip ||= private_ipv4
+    def ipv4
+      @ipv4 ||= global_ipv4
+      @ipv4 ||= private_ipv4
+    end
+
+    def ipv6
+      @ipv6 ||= global_ipv6
+      @ipv6 ||= private_ipv6
     end
 
     def private_ipv4
@@ -22,7 +26,7 @@ class EnhancedShellPs1::PS1
     end
 
     def private_ipv6
-      @private_ipv6 ||= @_ip_list.detect{|ip| ip.ipv6_private? }
+      @private_ipv6 ||= @_ip_list.detect{|ip| !ip.ipv6_mc_global? && ip.ipv6?}
     end
 
     def global_ipv4
@@ -30,7 +34,7 @@ class EnhancedShellPs1::PS1
     end
 
     def global_ipv6
-      @global_ipv4 ||= @_ip_list.detect{|ip| ip.ipv6_private? && ip.ipv6? }
+      @global_ipv6 ||= @_ip_list.detect{|ip| ip.ipv6_mc_global? && ip.ipv6? }
     end
 
     private
