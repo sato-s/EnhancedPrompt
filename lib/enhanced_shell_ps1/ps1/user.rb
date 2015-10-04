@@ -30,7 +30,6 @@ class EnhancedShellPs1::PS1
       @other_login_count ||= login_count - 1
     end
 
-
     def groupname
       @groupname = _group.name
     end

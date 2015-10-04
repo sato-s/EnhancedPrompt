@@ -1,9 +1,10 @@
+require_relative './emoji_writable'
 
 class EnhancedShellPs1::PS1
-
   # Responsible for delegating instructions to proper instance.
   # And convert into proper string after receiving Integer, AddrInfo or something else
   class Base
+    include EmojiWritable
 
     def ipv4
       _network.ipv4 ? _network.ipv4.inspect_sockaddr : "No #{__method__}"
@@ -53,6 +54,10 @@ class EnhancedShellPs1::PS1
       _user.users_count.to_s
     end
 
+    # TODO : should be method missing to ***_scale
+    def users_count_scale1
+      vertical_bar_scale(_user.users_count)
+    end
     def other_users_count
       _user.other_users_count.to_s
     end
