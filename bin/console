@@ -9,6 +9,8 @@ require "enhanced_shell_ps1"
 # (If you use this, don't forget to add pry to your Gemfile!)
 # require "pry"
 # Pry.start
+ps1=EnhancedShellPs1::PS1.new
+
 
 require "irb"
 IRB.start
