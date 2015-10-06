@@ -59,6 +59,36 @@ describe PS1 do
   end
 end
 
+describe 'String' do
+
+  describe '+ operator' do
+    it 'paints string' do
+      expect("abc".c(:red) + "def".c(:blue)).to match "(red)abc(red)(blue)def(blue)"
+      expect('abc'.c(:red)+'def'.c(:blue)).to match "(red)abc(red)(blue)def(blue)"
+      expect('abc'+'def'.c(:blue)).to match "(default)abc(default)(blue)def(blue)"
+      expect('abc'+String("def").c(:blue)).to match "(default)abc(default)(blue)def(blue)"
+    end
+    it 'Overwite appended string' do
+      expect( ('abc'.c(:red)+'def').c(:blue).to_color_s ).to match "(blue)(red)abc(red)(default)def(default)(blue)"
+      expect( ('abc'+'def'.c(:red)).c(:blue).to_color_s ).to match "(blue)(default)abc(default)(red)def(red)(blue)"
+    end
+  end
+
+  describe 'concat' do
+    it 'will not paint string' do
+      expect("abc".c(:red).concat "def".c(:blue)).to match "abcdef"
+      expect('abc'.c(:red).concat'def'.c(:blue)).to match "abcdef"
+      expect('abc'.concat 'def'.c(:blue)).to match "abcdef"
+      expect('abc'.concat String("def").c(:blue)).to match "abcdef"
+    end
+  end
+  describe '#{} expression' do
+    it 'paints embedded string' do
+      expect('abc'.c(:red)).to match "__abc(red)__"
+    end
+  end
+end
+
 # describe Colorizable do
 #   ps1 = PS1.new
 #   it 'can colorize nyaa' do

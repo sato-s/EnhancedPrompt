@@ -28,12 +28,6 @@ class EnhancedShellPs1::PS1
   def_delegator :@base, :groupname, :group
 
   def initialize(dir="?")
-    @dir=dir
     @base = Base.new
   end
-
-  def dir
-
-  end
-
 end
