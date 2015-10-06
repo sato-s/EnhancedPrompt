@@ -1,3 +1,5 @@
+# TODO should be colorable ?
+
 module Colorizable
   def colorize(str,color)
     color = color.to_sym if color.kind_of? String

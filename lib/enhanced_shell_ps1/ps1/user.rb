@@ -2,10 +2,13 @@ require 'etc'
 
 class EnhancedShellPs1::PS1
   class Base::User
+
+    # Shows your username
     def username
       @username ||= ENV['USER'] || ENV['LOGNAME'] || Etc.getlogin
     end
 
+    # Shows usernames currently in your system
     def usernames
       @user_names ||= _user_list.uniq
     end

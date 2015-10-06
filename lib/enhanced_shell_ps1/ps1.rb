@@ -1,16 +1,18 @@
 require_relative 'ps1/base'
 require_relative 'ps1/network'
 require_relative 'ps1/user'
-
+require_relative './string'
 require 'forwardable'
+
 # PS1 class defines all user instruction commands
 # Such as ip , ipv4 ...
 # This must be exactly same name as instruction command name.
 # Because we convert instruction command name into PS1 method directly
 # make sure to EnhancedShellPs1::PS1.instance_methods(false) shows
-# all instruction command name and no other than them.
+# all instruction command name and no methods other than them.
 class EnhancedShellPs1::PS1
   extend ::Forwardable
+  $options = {:shell=>:debug}
 
   def_delegators :@base,
                  :ipv4,:ipv6,:global_ipv4,:global_ipv6,:hostname_full,:hostname,

@@ -8,7 +8,7 @@ class EnhancedShellPs1::PS1
     end
 
     def hostname
-      hostname_full.split('.')[0]
+      @hostname ||= hostname_full.split('.')[0]
     end
 
     def hostname_full

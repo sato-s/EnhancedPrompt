@@ -58,6 +58,7 @@ class EnhancedShellPs1::PS1
     def users_count_scale1
       vertical_bar_scale(_user.users_count)
     end
+
     def other_users_count
       _user.other_users_count.to_s
     end
