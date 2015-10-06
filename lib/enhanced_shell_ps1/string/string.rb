@@ -1,5 +1,5 @@
 # Monkey patch to String
-
+# TODO: colors should be class
 $options={:shell=>:debug}
 
 class String

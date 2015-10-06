@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cda870c-10ab-4d39-89b1-78f2f102d757" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/enhanced_shell_ps1/object.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/enhanced_shell_ps1/string/string.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/enhanced_shell_ps1/colorizable.rb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/enhanced_shell_ps1/color.rb" afterPath="$PROJECT_DIR$/lib/enhanced_shell_ps1/string/color.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/enhanced_shell_ps1.iml" afterPath="$PROJECT_DIR$/.idea/enhanced_shell_ps1.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/enhanced_shell_ps1_spec.rb" afterPath="$PROJECT_DIR$/spec/enhanced_shell_ps1_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1.rb" afterPath="$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/enhanced_shell_ps1/string.rb" afterPath="$PROJECT_DIR$/lib/enhanced_shell_ps1/string.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/enhanced_shell_ps1/object.rb" afterPath="$PROJECT_DIR$/lib/enhanced_shell_ps1/object.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/enhanced_shell_ps1/string/string.rb" afterPath="$PROJECT_DIR$/lib/enhanced_shell_ps1/string/string.rb" />
     </list>
     <ignored path="enhanced_shell_ps1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,21 +99,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="string.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="string.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/string/string.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.3430127">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="object.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="object.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/object.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07622504">
-              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="28" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -179,10 +172,11 @@
         <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/dir.rb" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/spec/enhanced_shell_ps1_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/object.rb" />
         <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/string/color.rb" />
         <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/string.rb" />
         <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1.rb" />
+        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/object.rb" />
+        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/string/string.rb" />
       </list>
     </option>
   </component>
@@ -283,6 +277,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="enhanced_shell_ps1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enhanced_shell_ps1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enhanced_shell_ps1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enhanced_shell_ps1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="string" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -920,14 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/string/string.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/enhanced_shell_ps1_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -944,14 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/string.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -960,10 +960,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/string.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/object.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07622504">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="28" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/string/string.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3430127">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding />
         </state>
       </provider>
