@@ -1,5 +1,6 @@
 # Monkey patch to String
 # TODO: colors should be class
+# TODO define_method to refine #red, #white
 $options={:shell=>:debug}
 
 class String

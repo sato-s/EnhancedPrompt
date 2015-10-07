@@ -88,20 +88,3 @@ describe 'String' do
     end
   end
 end
-
-# describe Colorizable do
-#   ps1 = PS1.new
-#   it 'can colorize nyaa' do
-#     expect(colorize('nyaa',:white)).to eq %+\[$(tput setaf 7)\]nyaa\[$(tput sgr0)\]+
-#   end
-#   it 'show colorized hostname' do
-#     expect(colorize(ps1.host_full,:red)).to eq %+\[$(tput setaf 1)\]localhost.localdomain\[$(tput sgr0)\]+
-#   end
-# end
-
-# describe Parsable do
-#   # it '' do
-#   #   expect(parse).to eq
-#   # end
-#
-# end

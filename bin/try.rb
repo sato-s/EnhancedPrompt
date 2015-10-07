@@ -6,5 +6,5 @@ include EnhancedShellPs1
 ps1 = PS1.new
 
 EnhancedShellPs1::PS1.instance_methods(false).each do |met|
-  puts "#{met} : #{ps1.send(met)} "
+  puts "#{met} : #{ps1.send(met)}".red
 end
