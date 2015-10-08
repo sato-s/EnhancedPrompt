@@ -1,6 +1,6 @@
 require 'etc'
 
-class EnhancedShellPs1::PS1
+class EnhancedPrompt::Prompt
   class Base::User
 
     # Shows your username

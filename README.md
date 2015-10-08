@@ -1,8 +1,13 @@
-# EnhancedShellPs1
+# EnhancedPrompt
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/enhanced_shell_ps1`. To experiment with that code, run `bin/console` for an interactive prompt.
+## Features
 
-TODO: Delete this and the text above, and describe your gem
+- Provides rich shell prompt
+- Can display helpful information including IP, git branch, nicely abbreviated path name
+- Can choose from a bunch of pre-defied shell prompt style
+- Flexibly customizable by ruby internal DSL
+- Can change colors in simple syntax (thanks to Rainbow) 
+
 
 ## Installation
 

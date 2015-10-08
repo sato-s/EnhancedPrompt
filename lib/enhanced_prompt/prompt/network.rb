@@ -1,6 +1,6 @@
 require 'socket'
 
-class EnhancedShellPs1::PS1
+class EnhancedPrompt::Prompt
   class Base::Network
 
     def initialize

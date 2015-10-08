@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cda870c-10ab-4d39-89b1-78f2f102d757" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/enhanced_shell_ps1.iml" afterPath="$PROJECT_DIR$/.idea/enhanced_shell_ps1.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/enhanced_shell_ps1.rb" afterPath="$PROJECT_DIR$/lib/enhanced_shell_ps1.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/enhanced_shell_ps1_spec.rb" afterPath="$PROJECT_DIR$/spec/enhanced_shell_ps1_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/enhanced_shell_ps1/string/string.rb" afterPath="$PROJECT_DIR$/lib/enhanced_shell_ps1/string/string.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/try.rb" afterPath="$PROJECT_DIR$/bin/try.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$USER_HOME$/work/enhanced_shell_ps1/bin/try.rb" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/work/enhanced_shell_ps1/spec/run.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/work/enhanced_prompt/README.md" afterPath="$USER_HOME$/work/enhanced_prompt/README.md" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/work/enhanced_prompt/.idea/enhanced_shell_ps1.iml" afterPath="$USER_HOME$/work/enhanced_prompt/.idea/enhanced_shell_ps1.iml" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt.rb" afterPath="$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt.rb" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/work/enhanced_prompt/spec/enhanced_prompt_spec.rb" afterPath="$USER_HOME$/work/enhanced_prompt/spec/enhanced_prompt_spec.rb" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt.rb" afterPath="$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt.rb" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/string.rb" afterPath="$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/string.rb" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/work/enhanced_prompt/.idea/workspace.xml" afterPath="$USER_HOME$/work/enhanced_prompt/.idea/workspace.xml" />
     </list>
     <ignored path="enhanced_shell_ps1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,9 +24,10 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/enhanced_shell_ps1@try.coverage" NAME="try Coverage Results" MODIFIED="1444160819786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bin" MODULE_NAME="enhanced_shell_ps1" />
-    <SUITE FILE_PATH="coverage/enhanced_shell_ps1@string.coverage" NAME="string Coverage Results" MODIFIED="1444153530542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib/enhanced_shell_ps1" MODULE_NAME="enhanced_shell_ps1" />
-    <SUITE FILE_PATH="coverage/enhanced_shell_ps1@run.coverage" NAME="run Coverage Results" MODIFIED="1443861593191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="enhanced_shell_ps1" />
+    <SUITE FILE_PATH="coverage/enhanced_shell_ps1@try.coverage" NAME="try Coverage Results" MODIFIED="1444160819786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/work/enhanced_shell_ps1/bin" MODULE_NAME="enhanced_shell_ps1" />
+    <SUITE FILE_PATH="coverage/enhanced_shell_ps1@eps1.coverage" NAME="eps1 Coverage Results" MODIFIED="1444254824216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/work/enhanced_shell_ps1/bin" MODULE_NAME="enhanced_shell_ps1" />
+    <SUITE FILE_PATH="coverage/enhanced_shell_ps1@string.coverage" NAME="string Coverage Results" MODIFIED="1444153530542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1" MODULE_NAME="enhanced_shell_ps1" />
+    <SUITE FILE_PATH="coverage/enhanced_shell_ps1@run.coverage" NAME="run Coverage Results" MODIFIED="1443861593191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/work/enhanced_shell_ps1/lib" MODULE_NAME="enhanced_shell_ps1" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -36,88 +38,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ps1.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="enhanced_shell_ps1.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dir.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/dir.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="string.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/string/string.rb">
+        <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/string.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+              <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spec_helper.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <file leaf-file-name="enhanced_prompt_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/work/enhanced_prompt/spec/enhanced_prompt_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.069078945">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="version.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/version.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
               <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="enhanced_shell_ps1_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/enhanced_shell_ps1_spec.rb">
+      <file leaf-file-name="prompt.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/.gitignore">
+      <file leaf-file-name="string.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/string/string.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.3223684">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="emoji_writable.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/emoji_writable.rb">
+        <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/emoji_writable.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="24" />
@@ -126,11 +98,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="string.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/string.rb">
+      <file leaf-file-name="git.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/git.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+              <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="network.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/network.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="system_resource.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/system_resource.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -146,46 +138,62 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/work/enhanced_shell_ps1" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1_interface.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/network.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/base.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/run.rb" />
-        <option value="$PROJECT_DIR$/lib/run.rb" />
-        <option value="$PROJECT_DIR$/bin/run.rb" />
-        <option value="$PROJECT_DIR$/spec/run.rb" />
-        <option value="$PROJECT_DIR$/bin/console" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/color.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/colorizable.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/etc.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/parser.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/color.rb" />
-        <option value="$PROJECT_DIR$/bin/enhance_shell.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/emoji_writable.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/ps1_interface.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/base.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/network.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/colorizable.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/user.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/git.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/system_resource.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/parsable.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/dir.rb" />
-        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/string/color.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/string.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/object.rb" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1/string/string.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/bin/try.rb" />
-        <option value="$PROJECT_DIR$/tools/.gitignore" />
-        <option value="$PROJECT_DIR$/lib/enhanced_shell_ps1.rb" />
-        <option value="$PROJECT_DIR$/spec/enhanced_shell_ps1_spec.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/ps1_interface.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/network.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/base.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/run.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/run.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/spec/run.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/bin/console" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/ps1/color.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/ps1/colorizable.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/ps1/etc.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/parser.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/color.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/bin/enhance_shell.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/emoji_writable.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/ps1/ps1_interface.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/ps1/base.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/ps1/network.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/colorizable.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/ps1/user.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/ps1/git.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/ps1/system_resource.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/parsable.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/ps1/dir.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/spec/spec_helper.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/string/color.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/object.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/string/string.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/Gemfile" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/bin/try.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/tools/.gitignore" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/spec/enhanced_shell_ps1_spec.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/bin/run.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/string.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/bin/ps1" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1.rb" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/bin/eps1" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/README.md" />
+        <option value="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/ps1.rb" />
+        <option value="$USER_HOME$/work/enhanced_prompt/enhanced_shell_ps1.gemspec" />
+        <option value="$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt.rb" />
+        <option value="$USER_HOME$/work/enhanced_prompt/spec/enhanced_prompt_spec.rb" />
+        <option value="$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/ps1/dir.rb" />
+        <option value="$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/base.rb" />
+        <option value="$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/network.rb" />
+        <option value="$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/system_resource.rb" />
+        <option value="$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/user.rb" />
+        <option value="$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/dir.rb" />
+        <option value="$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/git.rb" />
+        <option value="$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/ps1.rb" />
+        <option value="$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/string.rb" />
+        <option value="$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt.rb" />
       </list>
     </option>
   </component>
@@ -224,6 +232,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -231,14 +240,8 @@
               <option name="myItemId" value="enhanced_shell_ps1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="enhanced_shell_ps1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enhanced_shell_ps1" />
+              <option name="myItemId" value="enhanced_prompt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -248,7 +251,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="enhanced_shell_ps1" />
+              <option name="myItemId" value="enhanced_prompt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -262,7 +265,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="enhanced_shell_ps1" />
+              <option name="myItemId" value="enhanced_prompt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -276,7 +279,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="enhanced_shell_ps1" />
+              <option name="myItemId" value="enhanced_prompt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -284,7 +287,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="enhanced_shell_ps1" />
+              <option name="myItemId" value="enhanced_prompt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -294,7 +297,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="enhanced_shell_ps1" />
+              <option name="myItemId" value="enhanced_prompt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -302,43 +305,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="enhanced_shell_ps1" />
+              <option name="myItemId" value="enhanced_prompt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ps1" />
+              <option name="myItemId" value="string" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../serverspec" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="last_opened_file_path" value="$USER_HOME$/work/serverspec" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/enhanced_shell_ps1/string" />
-      <recent name="$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1" />
-      <recent name="$PROJECT_DIR$/lib/enhanced_shell_ps1" />
-      <recent name="$PROJECT_DIR$/spec" />
-      <recent name="$PROJECT_DIR$/bin" />
+      <recent name="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/string" />
+      <recent name="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1/ps1" />
+      <recent name="$USER_HOME$/work/enhanced_shell_ps1/lib/enhanced_shell_ps1" />
+      <recent name="$USER_HOME$/work/enhanced_shell_ps1/spec" />
+      <recent name="$USER_HOME$/work/enhanced_shell_ps1/bin" />
     </key>
   </component>
-  <component name="RunManager" selected="Ruby.try">
+  <component name="RunManager" selected="Ruby.eps1">
     <configuration default="false" name="string" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="enhanced_shell_ps1" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/lib/enhanced_shell_ps1" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/lib/enhanced_prompt" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -351,7 +353,7 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/lib/enhanced_shell_ps1/string/string.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/lib/enhanced_prompt/string/string.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method />
     </configuration>
@@ -372,6 +374,26 @@
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/bin/try.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method />
+    </configuration>
+    <configuration default="false" name="eps1" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="enhanced_shell_ps1" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/bin" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/bin/eps1" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method />
     </configuration>
@@ -513,15 +535,17 @@
       <envs />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Ruby.run" />
       <item index="1" class="java.lang.String" itemvalue="Ruby.string" />
       <item index="2" class="java.lang.String" itemvalue="Ruby.try" />
+      <item index="3" class="java.lang.String" itemvalue="Ruby.eps1" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Ruby.try" />
-        <item index="1" class="java.lang.String" itemvalue="Ruby.string" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Ruby.eps1" />
+        <item index="1" class="java.lang.String" itemvalue="Ruby.try" />
+        <item index="2" class="java.lang.String" itemvalue="Ruby.string" />
       </list>
     </recent_temporary>
   </component>
@@ -544,22 +568,22 @@
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2725322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28004292" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3812038" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3812038" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -595,128 +619,55 @@
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
-      <path value="$PROJECT_DIR$/tools/term-ansicolor" />
-      <path value="$PROJECT_DIR$/tools/shell-color-pallet" />
+      <path value="$USER_HOME$/work/enhanced_shell_ps1/tools/term-ansicolor" />
+      <path value="$USER_HOME$/work/enhanced_shell_ps1/tools/shell-color-pallet" />
+      <path value="$USER_HOME$/work/enhanced_shell_ps1/tools/rainbow" />
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/system_resource.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/version.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/emoji_writable.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/network.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/try.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/emoji_writable.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/network.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/network.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/enhanced_shell_ps1_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/base.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/spec/enhanced_prompt_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/base.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/string/color.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/string/color.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/base.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/base.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/user.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="17" />
@@ -724,7 +675,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
@@ -732,28 +683,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/base.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/base.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/network.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/network.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="22" />
@@ -761,15 +713,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/enhanced_shell_ps1_spec.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/spec/enhanced_prompt_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
@@ -783,68 +734,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CODE_OF_CONDUCT.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/console">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="3" selection-start-column="28" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.12671232">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/LICENSE.txt">
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/setup">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/run.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20588236">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/system_resource.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/bin/setup">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/git.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -852,6 +755,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.129386">
           <caret line="224" column="21" selection-start-line="224" selection-start-column="21" selection-end-line="224" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -862,92 +766,185 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/network.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/tools/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="47" />
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/object.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/string/color.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="28" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/version.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/tools/rainbow/lib/rainbow/color.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7861842">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/tools/rainbow/lib/rainbow/legacy.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/string/color.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/tools/rainbow/lib/rainbow/string_utils.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/try.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/tools/rainbow/lib/rainbow/presenter.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/base.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/tools/rainbow/lib/rainbow/global.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/dir.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/bin/console">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09210526">
+          <caret line="4" column="0" selection-start-line="3" selection-start-column="28" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/tools/rainbow/lib/rainbow.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/tools/rainbow/lib/rainbow/wrapper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/tools/rainbow/lib/rainbow/ext/string.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/rvm/rubies/ruby-2.1.4/lib/ruby/gems/2.1.0/gems/ruby-debug-ide-0.6.0/lib/ruby-debug-ide.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/spec/spec_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.069078945">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/string/string.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/.gitignore">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1/emoji_writable.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/CODE_OF_CONDUCT.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6232877">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/bin/eps1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23026316">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/enhanced_shell_ps1.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="86" selection-start-line="11" selection-start-column="86" selection-end-line="11" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/dir.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="28" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/base.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="73" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/git.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/emoji_writable.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="24" />
@@ -955,42 +952,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/string.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/network.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1/ps1.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/system_resource.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_shell_ps1.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/enhanced_shell_ps1_spec.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/spec/enhanced_prompt_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/string.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.069078945">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/string/string.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3223684">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>

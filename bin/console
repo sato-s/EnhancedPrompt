@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require "bundler/setup"
-require "enhanced_shell_ps1"
+require "enhanced_prompt"
 
 # You can add fixtures and/or initialization code here to make experimenting
 # with your gem easier. You can also use a different console, if you like.
@@ -9,7 +9,7 @@ require "enhanced_shell_ps1"
 # (If you use this, don't forget to add pry to your Gemfile!)
 # require "pry"
 # Pry.start
-ps1=EnhancedShellPs1::PS1.new
+ps1=EnhancedPrompt::Prompt.new
 
 
 require "irb"

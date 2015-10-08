@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'enhanced_shell_ps1/version'
+require 'enhanced_prompt/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "enhanced_shell_ps1"
-  spec.version       = EnhancedShellPs1::VERSION
+  spec.name          = "enhanced_prompt"
+  spec.version       = EnhancedPrompt::VERSION
   spec.authors       = ["sato"]
   spec.email         = ["sato@example.com"]
 

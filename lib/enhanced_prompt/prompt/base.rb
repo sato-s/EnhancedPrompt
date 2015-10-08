@@ -1,6 +1,6 @@
 require_relative './emoji_writable'
 
-class EnhancedShellPs1::PS1
+class EnhancedPrompt::Prompt
   # Responsible for delegating instructions to proper instance.
   # And convert into proper string after receiving Integer, AddrInfo or something else
   class Base
