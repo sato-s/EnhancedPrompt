@@ -68,21 +68,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prompt.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="prompt.rb" pinned="false" current-in-tab="true">
         <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.62171054">
               <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="string.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/string/string.rb">
+      <file leaf-file-name="color.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/string/color.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3223684">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -773,13 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/string/color.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/work/enhanced_prompt/tools/rainbow/lib/rainbow/color.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.7861842">
@@ -1000,18 +993,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/string/color.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/string/string.rb">
+    <entry file="file://$USER_HOME$/work/enhanced_prompt/lib/enhanced_prompt/prompt.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3223684">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.62171054">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
