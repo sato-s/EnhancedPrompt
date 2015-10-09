@@ -5,11 +5,11 @@ class EnhancedPrompt::Prompt
       _dir
     end
 
-    def dir_abbreviated1(limit=60)
+    def dir_abbreviated1()
 
     end
 
-    def dir_abbreviated2(limit=60)
+    def dir_abbreviated2(limit)
       if _dir.size >= limit then
         '...'+_dir[-1..limit]
       else

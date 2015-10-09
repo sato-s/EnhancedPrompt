@@ -6,6 +6,7 @@ class EnhancedPrompt::Prompt
   class Base
     include EmojiWritable
 
+    # Delegating to Network resource
     def ipv4
       _network.ipv4 ? _network.ipv4.inspect_sockaddr : "No #{__method__}"
     end
@@ -30,6 +31,7 @@ class EnhancedPrompt::Prompt
       _network.hostname || "No #{__method__}"
     end
 
+    # Delegating to User resource
     def username
       _user.username || "No #{__method__}"
     end
@@ -67,6 +69,10 @@ class EnhancedPrompt::Prompt
       _user.login_count.to_s
     end
 
+    def my_login_count
+      _user.my_login_count.to_s
+    end
+
     def other_login_count
       _user.other_login_count.to_s
     end
@@ -79,6 +85,21 @@ class EnhancedPrompt::Prompt
       _user.gid.to_s || "No #{__method__}"
     end
 
+    def method_missing(name,*args)
+      case name.to_s
+        when  /\w+_count_scale/
+          delegate_to = name.to_s[0..-7]
+          "@" * self.send(delegate_to,*args).to_i
+        else
+          ''
+      end
+    end
+
+    # Delegating to Dir resources
+    def dir_abbreviated2(limit=60)s
+      _dir.dir_abbreviated2(limit)
+    end
+
     private
     def _network
       @network ||= Network.new
@@ -86,6 +107,10 @@ class EnhancedPrompt::Prompt
 
     def _user
       @user ||= User.new
+    end
+
+    def _dir
+      @dir ||= Dir.new
     end
 
   end

@@ -1,6 +1,8 @@
 require_relative 'prompt/base'
 require_relative 'prompt/network'
 require_relative 'prompt/user'
+require_relative 'prompt/dir'
+require_relative 'prompt/system_resource'
 require_relative './string'
 require 'forwardable'
 
@@ -23,8 +25,12 @@ class EnhancedPrompt::Prompt
                  :ipv4,:ipv6,:global_ipv4,:global_ipv6,:hostname_full,:hostname,
                  :username,:groupname,:usernames,:other_user_names,
                  :other_user_names_if_exists, :users_count,
-                 :other_users_count,:login_count,:other_login_count,:uid,:gid,
-                 :users_count_scale1 # TODO : should be method missing to ***_scale?
+                 :other_users_count,:login_count,:my_login_count,:other_login_count,
+                 :uid,:gid,
+                 :users_count_scale1, # TODO : should be method missing to ***_scale?
+                 :dir_abbreviated2
+
+  def_delegators :@base,:my_login_count_scale
 
   # User friendly aliases
   def_delegator :@base, :ipv4, :ip

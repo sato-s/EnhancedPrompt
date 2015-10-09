@@ -29,8 +29,12 @@ class EnhancedPrompt::Prompt
       @login_count ||= _user_list.size
     end
 
+    def my_login_count
+      @my_login_count ||= _user_list.count{|user| user == username}
+    end
+
     def other_login_count
-      @other_login_count ||= login_count - 1
+      @other_login_count ||= login_count - my_login_count
     end
 
     def groupname
