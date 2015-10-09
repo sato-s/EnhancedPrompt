@@ -1,6 +1,6 @@
 require_relative './emoji_writable'
 
-class EnhancedPrompt::Prompt
+class EnhancedPrompt::Token
   # Responsible for delegating instructions to proper instance.
   # And convert into proper string after receiving Integer, AddrInfo or something else
   class Base

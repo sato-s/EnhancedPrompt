@@ -1,4 +1,4 @@
-class EnhancedPrompt::Prompt
+class EnhancedPrompt::Token
   class Base::Dir
 
     def dir_full

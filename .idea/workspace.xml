@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cda870c-10ab-4d39-89b1-78f2f102d757" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/eps1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/list.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/setps1.sh" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/enhanced_prompt/prompt/base.rb" afterPath="$PROJECT_DIR$/lib/enhanced_prompt/prompt/base.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/enhanced_prompt/prompt/dir.rb" afterPath="$PROJECT_DIR$/lib/enhanced_prompt/prompt/dir.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/enhanced_prompt/counter.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/enhanced_prompt/prompt.rb" afterPath="$PROJECT_DIR$/lib/enhanced_prompt/token.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/enhanced_prompt/prompt/base.rb" afterPath="$PROJECT_DIR$/lib/enhanced_prompt/token/base.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/enhanced_prompt/prompt/dir.rb" afterPath="$PROJECT_DIR$/lib/enhanced_prompt/token/dir.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/enhanced_prompt/prompt/emoji_writable.rb" afterPath="$PROJECT_DIR$/lib/enhanced_prompt/token/emoji_writable.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/enhanced_prompt/prompt/git.rb" afterPath="$PROJECT_DIR$/lib/enhanced_prompt/token/git.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/enhanced_prompt/prompt/network.rb" afterPath="$PROJECT_DIR$/lib/enhanced_prompt/token/network.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/enhanced_prompt/prompt/system_resource.rb" afterPath="$PROJECT_DIR$/lib/enhanced_prompt/token/system_resource.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/enhanced_prompt/prompt/user.rb" afterPath="$PROJECT_DIR$/lib/enhanced_prompt/token/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/console" afterPath="$PROJECT_DIR$/bin/console" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/enhanced_prompt.rb" afterPath="$PROJECT_DIR$/lib/enhanced_prompt.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/enhanced_prompt_spec.rb" afterPath="$PROJECT_DIR$/spec/enhanced_prompt_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/enhanced_shell_ps1.iml" afterPath="$PROJECT_DIR$/.idea/enhanced_shell_ps1.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/enhanced_prompt/prompt.rb" afterPath="$PROJECT_DIR$/lib/enhanced_prompt/prompt.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/enhanced_prompt/prompt/user.rb" afterPath="$PROJECT_DIR$/lib/enhanced_prompt/prompt/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/eprompt" afterPath="$PROJECT_DIR$/bin/eprompt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/sato.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/sato.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="enhanced_shell_ps1.iws" />
@@ -41,21 +45,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="enhanced_prompt.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="enhanced_prompt.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.13922653">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="17" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="term-ansicolor.gemspec" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/term-ansicolor/term-ansicolor.gemspec">
+      <file leaf-file-name="token.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/token.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="865" selection-start-line="15" selection-start-column="865" selection-end-line="15" selection-end-column="865" />
+              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/token/base.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="90" column="40" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -71,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="enhanced_prompt_spec.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/enhanced_prompt_spec.rb">
+      <file leaf-file-name="setup" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/setup">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53370166">
-              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,51 +105,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="eprompt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/eprompt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="version.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/version.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/prompt/base.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="90" column="40" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="color.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/string/color.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eprompt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/eprompt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="emoji_writable.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/prompt/emoji_writable.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -156,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../enhanced_shell_ps1/lib/enhanced_shell_ps1/network.rb" />
         <option value="$PROJECT_DIR$/../enhanced_shell_ps1/lib/enhanced_shell_ps1/base.rb" />
         <option value="$PROJECT_DIR$/../enhanced_shell_ps1/lib/enhanced_shell_ps1/run.rb" />
         <option value="$PROJECT_DIR$/../enhanced_shell_ps1/lib/run.rb" />
@@ -204,8 +187,9 @@
         <option value="$PROJECT_DIR$/spec/enhanced_prompt_spec.rb" />
         <option value="$PROJECT_DIR$/lib/enhanced_prompt/prompt/user.rb" />
         <option value="$PROJECT_DIR$/lib/enhanced_prompt/prompt.rb" />
-        <option value="$PROJECT_DIR$/bin/eprompt" />
         <option value="$PROJECT_DIR$/lib/enhanced_prompt/prompt/base.rb" />
+        <option value="$PROJECT_DIR$/bin/eprompt" />
+        <option value="$PROJECT_DIR$/lib/enhanced_prompt/token.rb" />
         <option value="$PROJECT_DIR$/lib/enhanced_prompt.rb" />
       </list>
     </option>
@@ -259,20 +243,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="enhanced_prompt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enhanced_shell_ps1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enhanced_prompt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -583,15 +553,15 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28425026" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3812038" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3812038" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -641,13 +611,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/prompt/base.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/string/color.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -655,14 +618,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/prompt/base.rb">
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/token/base.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/prompt/user.rb">
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/token/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="17" />
@@ -670,7 +633,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/prompt.rb">
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/token.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
@@ -685,14 +648,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/prompt/base.rb">
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/token/base.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/prompt/network.rb">
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/token/network.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
@@ -700,7 +663,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/prompt.rb">
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/token.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="22" />
@@ -733,13 +696,6 @@
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/setup">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -883,14 +839,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/prompt/git.rb">
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/token/git.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/prompt/network.rb">
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/token/network.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="28" />
@@ -898,29 +855,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/prompt/system_resource.rb">
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/token/system_resource.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/prompt/dir.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/prompt.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/prompt/user.rb">
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/token/dir.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/token/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="13" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="22" />
@@ -952,23 +903,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/eprompt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/prompt/base.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="90" column="40" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/prompt/emoji_writable.rb">
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/token/emoji_writable.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="24" />
@@ -992,10 +927,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/string.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/counter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/token.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1008,7 +967,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/version.rb">
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt/token/base.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="40" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/enhanced_prompt_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5104972">
+          <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/setup">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1016,18 +991,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt.rb">
+    <entry file="file://$PROJECT_DIR$/bin/eprompt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/enhanced_prompt_spec.rb">
+    <entry file="file://$PROJECT_DIR$/lib/enhanced_prompt.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53370166">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.13922653">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="17" selection-end-column="29" />
           <folding />
         </state>
       </provider>

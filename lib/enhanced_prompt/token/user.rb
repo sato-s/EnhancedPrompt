@@ -1,6 +1,6 @@
 require 'etc'
 
-class EnhancedPrompt::Prompt
+class EnhancedPrompt::Token
   class Base::User
 
     # Shows your username

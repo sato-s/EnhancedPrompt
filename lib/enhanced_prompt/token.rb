@@ -1,18 +1,17 @@
-require_relative 'prompt/base'
-require_relative 'prompt/network'
-require_relative 'prompt/user'
-require_relative 'prompt/dir'
-require_relative 'prompt/system_resource'
-require_relative './string'
+require_relative 'token/base'
+require_relative 'token/network'
+require_relative 'token/user'
+require_relative 'token/dir'
+require_relative 'token/system_resource'
 require 'forwardable'
 
-# Prompt class defines all user instruction commands
+# Token class defines all user instruction commands
 # Such as ip , ipv4 ...
 # This must be exactly same name as instruction command name.
-# Because we convert instruction command name into Prompt method directly
-# make sure to EnhancedPrompt::Prompt.instance_methods(false) shows
+# Because we convert instruction command name into Token method directly
+# make sure to EnhancedPrompt::Token.instance_methods(false) shows
 # all instruction command name and no methods other than them.
-class EnhancedPrompt::Prompt
+module EnhancedPrompt::Token
   extend ::Forwardable
   $options = {:shell=>:debug}
 

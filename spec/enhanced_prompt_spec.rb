@@ -8,8 +8,8 @@ describe EnhancedPrompt do
   end
 end
 
-describe Prompt do
-  prompt = Prompt.new
+describe Token do
+  prompt = Token.new
   it 'show private ipv6 addr' do
     expect(prompt.ipv6).to match Resolv::IPv6::Regex
   end
@@ -57,7 +57,7 @@ describe Prompt do
   end
 end
 
-describe Prompt::Dir do
+describe Token::Dir do
   dir=`pwd`.chomp
   it 'show dir_abbreviated2' do
     expect(EnhancedPrompt.run{dir_abbreviated2}).to match /.+/

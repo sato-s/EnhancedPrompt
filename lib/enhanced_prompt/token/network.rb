@@ -1,6 +1,6 @@
 require 'socket'
 
-class EnhancedPrompt::Prompt
+class EnhancedPrompt::Token
   class Base::Network
 
     def initialize

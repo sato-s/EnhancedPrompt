@@ -1,6 +1,7 @@
 #!/usr/local/rvm/rubies/ruby-2.1.4/bin/ruby
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'enhanced_prompt'
+require 'optparse'
 
 =begin
 export PATH=$PATH:/home/sato/work/enhanced_prompt/bin
@@ -8,12 +9,10 @@ export PROMPT_COMMAND='eprompt "ip.color(:red)+host.c(:blue)+'a'"'
 export PS1=''
 =end
 
-ARGV[0] = 'list'
-
 if ARGV[0].nil? then
   exit 1
-elsif ARGV[0] == 'list'
-  EnhancedPrompt::Prompt.instance_methods(false).sort.each do |met|
+elsif ARGV[0] == 'list' then
+  EnhancedPrompt::Token.instance_methods(false).sort.each do |met|
     name = met.to_s
     print EnhancedPrompt.eval("%Q|#{name}|.c(:blue)+':'+ #{met}.c(:red) + %|\n| ")
   end
