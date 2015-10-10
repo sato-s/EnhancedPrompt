@@ -1,9 +1,10 @@
 require_relative './emoji_writable'
 
-class EnhancedPrompt::Token
+class EnhancedPrompt::Prompt
+
   # Responsible for delegating instructions to proper instance.
   # And convert into proper string after receiving Integer, AddrInfo or something else
-  class Base
+  class Token
     include EmojiWritable
 
     # Delegating to Network resource
@@ -96,7 +97,7 @@ class EnhancedPrompt::Token
     end
 
     # Delegating to Dir resources
-    def dir_abbreviated2(limit=60)s
+    def dir_abbreviated2(limit=40)
       _dir.dir_abbreviated2(limit)
     end
 
@@ -114,6 +115,6 @@ class EnhancedPrompt::Token
     end
 
   end
-
 end
+
 

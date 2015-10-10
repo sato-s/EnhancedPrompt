@@ -12,9 +12,9 @@ export PS1=''
 if ARGV[0].nil? then
   exit 1
 elsif ARGV[0] == 'list' then
-  EnhancedPrompt::Token.instance_methods(false).sort.each do |met|
+  EnhancedPrompt::Prompt.instance_methods(false).sort.each do |met|
     name = met.to_s
-    print EnhancedPrompt.eval("%Q|#{name}|.c(:blue)+':'+ #{met}.c(:red) + %|\n| ")
+    print EnhancedPrompt.eval("%Q|#{name}|.c(:blue).bg('#00FFFF')+':'.bg('#00FFFF').c(:white)+ #{met}.c(:red).bg('#00FFFF')._ + %|\n| ")
   end
 else
   print EnhancedPrompt.eval(ARGV[0])

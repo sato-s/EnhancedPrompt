@@ -1,6 +1,6 @@
 # TODO should be implemented someday
 class EnhancedPrompt::Prompt
-  class Base::Git
+  class Token::Git
 
   end
 end

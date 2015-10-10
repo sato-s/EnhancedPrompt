@@ -1,3 +1,0 @@
-class String::Color
-
-end

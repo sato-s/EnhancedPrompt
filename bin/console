@@ -9,7 +9,7 @@ require "enhanced_prompt"
 # (If you use this, don't forget to add pry to your Gemfile!)
 # require "pry"
 # Pry.start
-ps1=EnhancedPrompt::Token.new
+ps1=EnhancedPrompt::Prompt.new
 
 
 require "irb"

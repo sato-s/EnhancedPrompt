@@ -3,9 +3,9 @@
 ## Features
 
 - Provides rich shell prompt
-- Can display helpful information including IP, git branch, nicely abbreviated path name
+- Helpful information including IP, git branch, nicely abbreviated path name
 - Can choose from a bunch of pre-defied shell prompt style
-- Flexibly customizable by ruby internal DSL
+- Extremely flexible running as ruby internal DSL
 - Can change colors in simple syntax (thanks to Rainbow) 
 
 

@@ -1,7 +1,7 @@
 require 'socket'
 
-class EnhancedPrompt::Token
-  class Base::Network
+class EnhancedPrompt::Prompt
+  class Token::Network
 
     def initialize
       _ip_list

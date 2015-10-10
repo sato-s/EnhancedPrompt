@@ -1,6 +1,6 @@
 # TODO should be implemented someday
-class EnhancedPrompt::Token
-  class Base::SystemResource
+class EnhancedPrompt::Prompt
+  class Token::SystemResource
 
   end
 end
