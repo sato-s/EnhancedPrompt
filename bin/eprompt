@@ -14,7 +14,7 @@ if ARGV[0].nil? then
 elsif ARGV[0] == 'list' then
   EnhancedPrompt::Prompt.instance_methods(false).sort.each do |met|
     name = met.to_s
-    print EnhancedPrompt.eval("%Q|#{name}|.c(:blue).bg('#00FFFF')+':'.bg('#00FFFF').c(:white)+ #{met}.c(:red).bg('#00FFFF')._ + %|\n| ")
+    print EnhancedPrompt.eval("%Q|#{name}|.c(:pale_goldenrod).bg('#00FFFF')+':'.bg('#00FFFF').c(:white)+ #{met}.c(:red).bg('#00FFFF')._ + %|\n| ")
   end
 else
   print EnhancedPrompt.eval(ARGV[0])

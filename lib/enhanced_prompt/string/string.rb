@@ -1,3 +1,4 @@
+require 'rainbow'
 require_relative 'color_table'
 # This monkey patch to String, enable to paint string on ANSI terminal
 # Thanks to Rainbow gem we can easily implement colorful string
@@ -6,26 +7,31 @@ require_relative 'color_table'
 # https://github.com/sickill/rainbow
 #
 # In addition to the above we implement several utilities and aliases
-class String
+module EnhancedPrompt::StringExtension
   include ColorTable
-  alias_method :original_color, :color
 
+  def c(kolor)
+    if kolor.is_a? Symbol || color_table.has_key?(kolor)
+      return Rainbow(self).color(color_table[kolor])
+    end
+    Rainbow(self).color(kolor)
+  end
 
-  alias_method :br, :bright
-  alias_method :_, :underline
-  alias_method :bg, :background
+  def bg(kolor)
+    if kolor.is_a? Symbol || color_table.has_key?(kolor)
+      return Rainbow(self).background(color_table[kolor])
+    end
+    Rainbow(self).background(kolor)
+  end
 
-  # def color(kolor)
-  #   string=String.new(self)
-  #   string.original_color(color_table[kolor])
-  #   string
-  #   # if kolor.is_a? Symbol
-  #   #   kolor =
-  #   #   # if color_table.has_key? c
-  #   #   #
-  #   #   # end
-  #   # end
-  #   # original_color(kolor)
-  # end
-  alias_method :c, :color
+  def _
+    Rainbow(self).underline
+  end
+
+  def br
+    Rainbow(self).bright
+  end
+
 end
+
+String.prepend EnhancedPrompt::StringExtension

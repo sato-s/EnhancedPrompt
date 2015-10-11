@@ -1,10 +1,9 @@
+require_relative './string/string'
 require_relative 'token/token'
 require_relative './token/network'
 require_relative './token/user'
 require_relative './token/dir'
 require_relative './token/system_resource'
-require 'rainbow/ext/string'
-require_relative './string/string'
 
 require 'forwardable'
 
