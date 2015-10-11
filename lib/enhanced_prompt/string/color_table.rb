@@ -1,3 +1,9 @@
+module EnhancedPrompt
+ module StringExtension
+
+ end
+end
+
 module EnhancedPrompt::StringExtension
   module ColorTable
     def color_table
