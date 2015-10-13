@@ -3,20 +3,40 @@ $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'enhanced_prompt'
 require 'optparse'
 
-=begin
-export PATH=$PATH:/home/sato/work/enhanced_prompt/bin
-export PROMPT_COMMAND='eprompt "ip.color(:red)+host.c(:blue)+'a'"'
-export PS1=''
-=end
+$options = {}
+OptionParser.new do |opts|
+  opts.banner = "Usage: example.rb [options]"
 
-if ARGV[0].nil? then
-  exit 1
-elsif ARGV[0] == 'list' then
+  opts.on("--debug", "debug") do
+    $options[:debug] = true
+  end
+  opts.on("--tokens", "show tokens") do
+    $options[:tokens] = true
+  end
+  opts.on("--colors", "show predefined colors") do
+    $options[:colors] = true
+  end
+end.parse!
+
+code=ARGV[0]
+
+if $options[:tokens] && code.nil? && $options[:colors].nil? then
   EnhancedPrompt::Prompt.instance_methods(false).sort.each do |met|
     name = met.to_s
-    print EnhancedPrompt.eval("%Q|#{name}|.c(:pale_goldenrod).bg('#00FFFF')+':'.bg('#00FFFF').c(:white)+ #{met}.c(:red).bg('#00FFFF')._ + %|\n| ")
+    print EnhancedPrompt.run("%Q|#{name}|.c(:black)+' => '+ #{met} + %|\n|" )
   end
+elsif $options[:colors] && $options[:tokens].nil? &&code.nil? then
+  EnhancedPrompt::StringExtension::ColorTable.color_table.each_key{|color|
+    print EnhancedPrompt.run{":"+color.to_s+" => "+ "      ".bg(color)+"\n"}
+  }
 else
-  print EnhancedPrompt.eval(ARGV[0])
+  if $options[:debug]
+   p EnhancedPrompt.run(code)
+  end
+  print EnhancedPrompt.run(code)
 end
 
+=begin
+export PROMPT_COMMAND='/home/sato/work/enhanced_prompt/bin/eprompt "default"'
+export PS1=''
+=end

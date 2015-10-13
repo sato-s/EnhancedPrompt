@@ -51,5 +51,6 @@ module EnhancedPrompt::StringExtension
                     :ghost_white=>'#F8F8FF', :navajo_white=>'#FFDEAD', :white_smoke=>'#F5F5F5', :yellow=>'#FFFF00',
                     :light_yellow=>'#FFFFE0', :green_yellow=>'#ADFF2F'}
     end
+    module_function :color_table
   end
 end

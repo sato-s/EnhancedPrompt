@@ -97,7 +97,7 @@ class EnhancedPrompt::Prompt
 
     # Delegating to Dir resources
     def dir_abbreviated2(limit=40)
-      _dir.dir_abbreviated2(limit)
+      _dir.dir_abbreviated2(limit).to_s || "No #{__method__}"
     end
 
     private

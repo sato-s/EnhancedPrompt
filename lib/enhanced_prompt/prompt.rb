@@ -4,6 +4,7 @@ require_relative './token/network'
 require_relative './token/user'
 require_relative './token/dir'
 require_relative './token/system_resource'
+require_relative './style/style'
 
 require 'forwardable'
 
@@ -15,6 +16,7 @@ require 'forwardable'
 # all instruction command name and no methods other than them.
 class EnhancedPrompt::Prompt
   extend ::Forwardable
+  include Style
 
   # In this section, we just delegate to @base class as is
   # In @base, I named methods to define their semantics

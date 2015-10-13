@@ -2,18 +2,14 @@ require "enhanced_prompt/version"
 require 'enhanced_prompt/prompt'
 
 module EnhancedPrompt
-
-  # Run Proc
-  def run(&code)
+  def run(str=nil,&code)
     prompt=Prompt.new()
-    prompt.instance_eval(&code)
+    if block_given?
+      prompt.instance_eval(&code)
+    else
+      prompt.instance_eval(str)
+    end
   end
-
-  # Run String
-  def eval(code)
-    prompt=Prompt.new()
-    prompt.instance_eval(code)
-  end
-  module_function :run, :eval
+  module_function :run
 end
 
