@@ -34,9 +34,12 @@ class EnhancedPrompt::Prompt::Token
       ""
     end
 
+    # TODO
+    # cd /home/sato/work/serverspec_test/spec/nyaa
+    # corrupt this if limit =40
     def dir_abbreviated2(limit)
+      dir = _base
       if _dir_full.length >= limit then
-        dir = _base
         _dir.split_paths.reverse.each do |path|
           if dir.length + path.length <= limit
             dir = path + dir
