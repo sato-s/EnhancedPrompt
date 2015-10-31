@@ -1,5 +1,8 @@
 # EnhancedPrompt
 
+In progress...............................................
+
+
 ## Features
 
 - Provides rich shell prompt

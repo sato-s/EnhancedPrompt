@@ -23,7 +23,7 @@ code=ARGV[0]
 if $options[:tokens] && code.nil? && $options[:colors].nil? then
   EnhancedPrompt::Prompt.instance_methods(false).sort.each do |met|
     name = met.to_s
-    print EnhancedPrompt.run("%Q|#{name}|.c(:black)+' => '+ #{met} + %|\n|" )
+    print EnhancedPrompt.run("%Q|#{name}|.c(:red)+' => '+ #{met} + %|\n|" )
   end
 elsif $options[:colors] && $options[:tokens].nil? &&code.nil? then
   EnhancedPrompt::StringExtension::ColorTable.color_table.each_key{|color|
