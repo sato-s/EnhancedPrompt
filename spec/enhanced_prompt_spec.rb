@@ -1,58 +1,77 @@
 require 'spec_helper'
 include EnhancedPrompt
 
-describe EnhancedPrompt::Prompt::Token::Dir::Pathname do
-  before(:each) do
-    @path_class = EnhancedPrompt::Prompt::Token::Dir::Pathname
-    @path = @path_class.new('/home/user/aaa/bbb')
-  end
+describe 'Monkey patched Pathname' do
+  subject(:path) { Pathname.new('/home/user/aaa/bbb') }
+
   describe '#length' do
     it 'show path length' do
-      expect(@path.length).to eq(18)
+      expect(path.length).to eq(18)
     end
   end
+
   describe '#split_paths' do
     it 'split to multiple paths' do
-      expect(@path.split_paths).to eq([@path_class.new('home'),@path_class.new('user'),@path_class.new('aaa'),@path_class.new('bbb')])
-      expect(@path_class.new('aa/bb').split_paths).to eq([@path_class.new('aa'),@path_class.new('bb')])
+      expect(path.split_paths).to eq([Pathname.new('home'),Pathname.new('user'),Pathname.new('aaa'),Pathname.new('bbb')])
     end
   end
 end
 
 describe EnhancedPrompt::Prompt::Token::Dir do
-  before(:each) do
-    @path_class = EnhancedPrompt::Prompt::Token::Dir::Pathname
-    @long_dir_path=@path_class.new('/home/user/workspace/project/com/example/project/database/this/dir/is/too/long/to/print/in/prompt')
-    allow_any_instance_of(EnhancedPrompt::Prompt::Token::Dir).to receive(:_dir_full).and_return(@long_dir_path)
-    @dir =EnhancedPrompt::Prompt::Token::Dir.new
-  end
-  describe '#dir_full' do
-    it 'show full directory path' do
-      expect(@dir.dir_full).to eq EnhancedPrompt::Prompt::Token::Dir::Pathname.new('/home/user/workspace/project/com/example/project/database/this/dir/is/too/long/to/print/in/prompt')
+
+  describe 'Normal case' do
+    subject(:long_dir_path) { Pathname.new('/home/user/workspace/project/com/example/project/database/this/dir/is/too/long/to/print/in/prompt') }
+    subject(:dir) { EnhancedPrompt::Prompt::Token::Dir.new}
+    before(:each){ allow_any_instance_of(EnhancedPrompt::Prompt::Token::Dir).to receive(:_dir_full).and_return(long_dir_path)}
+
+    describe '#dir_full' do
+      it 'show full directory path' do
+        expect(dir.dir_full).to eq Pathname.new('/home/user/workspace/project/com/example/project/database/this/dir/is/too/long/to/print/in/prompt')
+      end
     end
-  end
-  describe '#dir_abbreviated2' do
-    it 'omit path name > limit ' do
-      expect(@dir.dir_abbreviated2(7)).to eq EnhancedPrompt::Prompt::Token::Dir::Pathname.new('.../prompt')
+    describe '#dir_abbreviated2 7' do
+      it 'omit path name > limit ' do
+        expect(dir.dir_abbreviated2(7)).to eq Pathname.new('.../prompt')
+      end
+      it 'omit path name > limit 8' do
+        expect(dir.dir_abbreviated2(8)).to eq Pathname.new('.../in/prompt')
+      end
+      it 'omit path name > limit 9' do
+        expect(dir.dir_abbreviated2(9)).to eq Pathname.new('.../in/prompt')
+      end
+      it 'omit path name > limit 100' do
+        expect(dir.dir_abbreviated2(10)).to eq Pathname.new('.../in/prompt')
+      end
+      it 'Do nothing if path < limit 5000' do
+        expect(dir.dir_abbreviated2(5000)).to eq Pathname.new('/home/user/workspace/project/com/example/project/database/this/dir/is/too/long/to/print/in/prompt')
+      end
+      it 'just show current dir if limit is too shot limit' do
+        expect(dir.dir_abbreviated2(3)).to eq Pathname.new('.../prompt')
+      end
     end
-    it 'omit path name > limit ' do
-      expect(@dir.dir_abbreviated2(8)).to eq EnhancedPrompt::Prompt::Token::Dir::Pathname.new('.../prompt')
-    end
-    it 'omit path name > limit ' do
-      expect(@dir.dir_abbreviated2(9)).to eq EnhancedPrompt::Prompt::Token::Dir::Pathname.new('.../prompt')
-    end
-    it 'omit path name > limit ' do
-      expect(@dir.dir_abbreviated2(10)).to eq EnhancedPrompt::Prompt::Token::Dir::Pathname.new('.../in/prompt')
-    end
-    it 'Do nothing if path < limit ' do
-      expect(@dir.dir_abbreviated2(5000)).to eq EnhancedPrompt::Prompt::Token::Dir::Pathname.new('/home/user/workspace/project/com/example/project/database/this/dir/is/too/long/to/print/in/prompt')
-    end
-    it 'just show current dir if limit is too shot limit' do
-      expect(@dir.dir_abbreviated2(3)).to eq EnhancedPrompt::Prompt::Token::Dir::Pathname.new('.../prompt')
-    end
+
   end
 
+  # describe 'Previously failed case' do
+  #   subject(:dir) { EnhancedPrompt::Prompt::Token::Dir.new}
+  #   describe '#dir_abbreviated2' do
+  #     it 'should ommit first pathname' do
+  #       expect(dir.dir_abbreviated2(40)).to eq Pathname.new('.../sato/work/enhanced_prompt/tools/com')
+  #     end
+  #     it 'should ommit first pathname' do
+  #       expect(dir.dir_abbreviated2(40)).to eq Pathname.new('.../sato/work/enhanced_prompt/tools/com')
+  #     end
+  #     it 'should ommit first pathname' do
+  #       expect(dir.dir_abbreviated2(40)).to eq Pathname.new('.../sato/work/enhanced_prompt/tools/com')
+  #     end
+  #     it 'should ommit first pathname' do
+  #       expect(dir.dir_abbreviated2(40)).to eq Pathname.new('.../sato/work/enhanced_prompt/tools/com')
+  #     end
+  #   end
+  # end
+
 end
+
 
 # integration tests
 

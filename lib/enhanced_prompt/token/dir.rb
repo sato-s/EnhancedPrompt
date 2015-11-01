@@ -6,7 +6,8 @@ class EnhancedPrompt::Prompt::Token
     class ::Pathname
 
       def length
-        self.to_s.include?('/') ? self.to_s.size : self.to_s.count("^/")+1
+        #self.to_s.include?('/') ? self.to_s.size : self.to_s.count("^/")+1
+        self.to_s.size
       end
 
       def split_paths
@@ -47,6 +48,7 @@ class EnhancedPrompt::Prompt::Token
             return Pathname.new('...')+dir
           end
         end
+        _dir_full
       else
         _dir_full
       end
