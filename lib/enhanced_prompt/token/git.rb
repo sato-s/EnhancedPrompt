@@ -6,6 +6,8 @@ class EnhancedPrompt::Prompt
       _current_branch
     end
 
+    # TODO this could not show git branch
+    # I should run %x|git branch| in Dir.pwd
     private
     def _current_branch
       if @_current_branch.nil? then
@@ -15,14 +17,15 @@ class EnhancedPrompt::Prompt
             return ''
           else
             current_branch_line = result[/^[*]+/]
-            @_current_branch = current_branch_line[/\w+/]
+            @_current_branch = current_branch_line
           end
-        rescue e
+        rescue =>e
           return ''
         end
+      else
+        @_current_branch
       end
-    else
-      @_current_branch
+
     end
 
   end

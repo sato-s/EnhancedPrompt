@@ -16,11 +16,14 @@ OptionParser.new do |opts|
   opts.on("--colors", "show predefined colors") do
     $options[:colors] = true
   end
+  opts.on("-h","--help", "show help") do
+    $options[:help] = true
+  end
 end.parse!
 
 code=ARGV[0]
 
-if $options[:tokens] && code.nil? && $options[:colors].nil? then
+if $options[:help] then
   EnhancedPrompt::Prompt.instance_methods(false).sort.each do |met|
     name = met.to_s
     print EnhancedPrompt.run("%Q|#{name}|.c(:red)+' => '+ #{met} + %|\n|" )
@@ -30,6 +33,7 @@ elsif $options[:colors] && $options[:tokens].nil? &&code.nil? then
     print EnhancedPrompt.run{":"+color.to_s+" => "+ "      ".bg(color)+"\n"}
   }
 else
+  code ||= 'default'
   if $options[:debug]
    p EnhancedPrompt.run(code)
   end

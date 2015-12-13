@@ -8,36 +8,36 @@ class EnhancedPrompt::Prompt
 
     # Delegating to Network resource
     def ipv4
-      _network.ipv4 ? _network.ipv4.inspect_sockaddr : "No #{__method__}"
+      _network.ipv4 ? _network.ipv4.inspect_sockaddr : ''
     end
 
     def ipv6
-      _network.ipv6 ? _network.ipv6.inspect_sockaddr : "No #{__method__}"
+      _network.ipv6 ? _network.ipv6.inspect_sockaddr : ''
     end
 
     def global_ipv4
-      _network.global_ipv4 ? _network.global_ipv4.inspect_sockaddr : "No #{__method__}"
+      _network.global_ipv4 ? _network.global_ipv4.inspect_sockaddr : ''
     end
 
     def global_ipv6
-      _network.global_ipv6 ? _network.global_ipv6.inspect_sockaddr : "No #{__method__}"
+      _network.global_ipv6 ? _network.global_ipv6.inspect_sockaddr : ''
     end
 
     def hostname_full
-      _network.hostname_full || "No #{__method__}"
+      _network.hostname_full || ''
     end
 
     def hostname
-      _network.hostname || "No #{__method__}"
+      _network.hostname || ''
     end
 
     # Delegating to User resource
     def username
-      _user.username || "No #{__method__}"
+      _user.username || ''
     end
 
     def groupname
-      _user.groupname || "No #{__method__}"
+      _user.groupname || ''
     end
 
     def usernames
@@ -100,17 +100,31 @@ class EnhancedPrompt::Prompt
       _dir.dir_abbreviated2(limit).to_s || "No #{__method__}"
     end
 
+    # Delegating to Time resources
+
+    def time1
+      _time.time1.to_s
+    end
+
     private
+    def _git
+      @_git ||= Git.new
+    end
+
     def _network
-      @network ||= Network.new
+      @_network ||= Network.new
     end
 
     def _user
-      @user ||= User.new
+      @_user ||= User.new
     end
 
     def _dir
-      @dir ||= Dir.new
+      @_dir ||= Dir.new
+    end
+
+    def _time
+      @_time ||= Time.new
     end
 
   end
