@@ -9,8 +9,8 @@ class EnhancedPrompt::Prompt
     end
 
     def default
-      time1.c(:green)+ " #{user}(#{ip})".c(:aqua)+ "\n"+
-      "#{dir_abbreviated2(20)} -> ".c(:white).bg(:blue)
+      time1.c(:green)+ " #{user} ".c(:aqua)+ git.c(:red)+ "\n"+
+      "#{dir_abbreviated2(20)} $".c(:white)
     end
 
   end
