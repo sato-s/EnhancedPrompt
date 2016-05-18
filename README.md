@@ -20,6 +20,15 @@ Add this line to your application's Gemfile:
 gem 'enhanced_shell_ps1'
 ```
 
+eprompt(){
+/home/sato/work/enhanced_prompt/bin/eprompt "default";
+}
+export PS1="\$(eprompt)\$"
+
+export PROMPT_COMMAND='/home/sato/work/enhanced_prompt/bin/eprompt default'
+export PS1=' '
+
+
 And then execute:
 
     $ bundle
