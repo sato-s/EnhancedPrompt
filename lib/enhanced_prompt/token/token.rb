@@ -100,6 +100,10 @@ class EnhancedPrompt::Prompt
       _dir.dir_abbreviated2(limit).to_s || "No #{__method__}"
     end
 
+    def git
+      _git.git
+    end
+
     # Delegating to Time resources
 
     def time1
@@ -108,7 +112,7 @@ class EnhancedPrompt::Prompt
 
     private
     def _git
-      @_git ||= Git.new
+      @_git ||= Git.new(_dir.dir_full)
     end
 
     def _network
