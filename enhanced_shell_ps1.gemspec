@@ -7,11 +7,11 @@ Gem::Specification.new do |spec|
   spec.name          = "enhanced_prompt"
   spec.version       = EnhancedPrompt::VERSION
   spec.authors       = ["sato"]
-  spec.email         = ["sato@example.com"]
+  spec.email         = ["s.sato.desu@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{You can use/customize cool prompt (PS1 in bash)}
+  spec.description   = %q{enhanced_prompt provide many pre-defined cool prompt. you can also make your own colorful/useful prompt }
+  spec.homepage      = "http://bundler.io/git.html"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -26,6 +26,8 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.add_dependency "rainbow"
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"

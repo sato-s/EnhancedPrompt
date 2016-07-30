@@ -14,6 +14,20 @@ In progress...............................................
 
 ## Installation
 
+```
+gem install enhanced_prompt
+```
+
+```
+cat << EOF > ~/.bashrc
+export PROMPT_COMMAND='eprompt default2'
+export PS1=' '
+EOF
+```
+
+
+
+
 Add this line to your application's Gemfile:
 
 ```ruby
@@ -23,9 +37,11 @@ gem 'enhanced_shell_ps1'
 eprompt(){
 /home/sato/work/enhanced_prompt/bin/eprompt "default";
 }
-export PS1="\$(eprompt)\$"
 
-export PROMPT_COMMAND='/home/sato/work/enhanced_prompt/bin/eprompt default'
+export PROMPT_COMMAND=''
+export PS1="$(eprompt)"
+
+export PROMPT_COMMAND='eprompt default2'
 export PS1=' '
 
 
