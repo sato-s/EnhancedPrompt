@@ -52,24 +52,6 @@ describe EnhancedPrompt::Prompt::Token::Dir do
 
   end
 
-  # describe 'Previously failed case' do
-  #   subject(:dir) { EnhancedPrompt::Prompt::Token::Dir.new}
-  #   describe '#dir_abbreviated2' do
-  #     it 'should ommit first pathname' do
-  #       expect(dir.dir_abbreviated2(40)).to eq Pathname.new('.../sato/work/enhanced_prompt/tools/com')
-  #     end
-  #     it 'should ommit first pathname' do
-  #       expect(dir.dir_abbreviated2(40)).to eq Pathname.new('.../sato/work/enhanced_prompt/tools/com')
-  #     end
-  #     it 'should ommit first pathname' do
-  #       expect(dir.dir_abbreviated2(40)).to eq Pathname.new('.../sato/work/enhanced_prompt/tools/com')
-  #     end
-  #     it 'should ommit first pathname' do
-  #       expect(dir.dir_abbreviated2(40)).to eq Pathname.new('.../sato/work/enhanced_prompt/tools/com')
-  #     end
-  #   end
-  # end
-
 end
 
 
