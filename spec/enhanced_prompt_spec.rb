@@ -124,18 +124,24 @@ describe Prompt do
   end
 end
 
-describe 'Colors and Styles' do
-  it 'can show same style in various order' do
-    expect(run{'aa'.c(:aqua)._.bg(:gold).br}).to eq %+\e[38;5;51m\e[4m\e[48;5;226m\e[1maa\e[0m+
+describe 'String' do
+  it '#color' do
+    expect('aa'.color(:aqua)).to eq "\e[38;5;51maa\e[0m"
   end
-  it 'can show same style in various order' do
-    expect(run{'aa'._.c(:aqua).bg(:gold).br}).to eq %+\e[4m\e[38;5;51m\e[48;5;226m\e[1maa\e[0m+
+  it '#c' do
+    expect('aa'.c(:aqua)).to eq "\e[38;5;51maa\e[0m"
   end
-  it 'can show same style in various order' do
-    expect(run{'aa'.bg(:gold)._.c(:aqua).br}).to eq %+\e[48;5;226m\e[4m\e[38;5;51m\e[1maa\e[0m+
+  it '#bg' do
+    expect(run{'aa'.bg(:aqua)}).to eq "\e[48;5;51maa\e[0m"
   end
-  it 'can show same style in various order' do
-    expect(run{'aa'.br._.c(:aqua).bg(:gold)}).to eq %+\e[1m\e[4m\e[38;5;51m\e[48;5;226maa\e[0m+
+  it '#background' do
+    expect(run{'aa'.background(:aqua)}).to eq "\e[48;5;51maa\e[0m"
+  end
+  it '#_' do
+    expect(run{'aa'._}).to eq "\e[4maa\e[0m"
+  end
+  it 'with blink' do
+    expect(run{'aa'.blink}).to eq "\e[5maa\e[0m"
   end
 end
 

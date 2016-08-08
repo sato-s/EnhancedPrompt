@@ -1,4 +1,4 @@
-require 'rainbow/ext/string'
+require 'rainbow'
 # This monkey patch to String, enable to paint string on ANSI terminal
 # Thanks to Rainbow gem we can easily implement colorful string
 # Just running 'red'.color(:red), red string appears on terminal
@@ -13,25 +13,25 @@ module EnhancedPrompt
     module InstanceMethods
       
 
-      def background(value)
-
+      def bg(value)
+        Rainbow(self).bg(value)
       end
 
-      def color(value)
-        
+      def c(value)
+        Rainbow(self).color(value)
       end
 
       def blink
-
+        Rainbow(self).blink
       end
 
-      def underbar
-
+      def _
+        Rainbow(self).underline
       end
 
 
-      alias_method :c, :color
-      alias_method :bg, :background
+      alias_method :color, :c
+      alias_method :background, :bg 
     end
   end
 end
