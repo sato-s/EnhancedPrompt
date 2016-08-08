@@ -85,19 +85,13 @@ class EnhancedPrompt::Prompt
       _user.gid.to_s || "No #{__method__}"
     end
 
-    def method_missing(name,*args)
-      case name.to_s
-        when  /\w+_count_scale/
-          delegate_to = name.to_s[0..-7]
-          "@" * self.send(delegate_to,*args).to_i
-        else
-          ''
-      end
+    # Delegating to Dir resources
+    def dir_abbreviated1(limit=40)
+      _dir.dir_abbreviated1(limit).to_s || ""
     end
 
-    # Delegating to Dir resources
-    def dir_abbreviated2(limit=40)
-      _dir.dir_abbreviated2(limit).to_s || "No #{__method__}"
+    def dir_full
+      _dir.dir_full.to_s
     end
 
     def git
@@ -129,6 +123,11 @@ class EnhancedPrompt::Prompt
 
     def _time
       @_time ||= Time.new
+    end
+
+    def method_missing(name,*args)
+      puts "No such token. "
+      raise super
     end
 
   end

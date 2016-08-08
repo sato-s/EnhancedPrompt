@@ -36,7 +36,7 @@ class EnhancedPrompt::Prompt
                  :other_users_count,:login_count,:my_login_count,:other_login_count,
                  :uid,:gid,
                  :users_count_scale1, # TODO : should be method missing to ***_scale?
-                 :dir_abbreviated1,
+                 :dir_full, :dir_abbreviated1,
                  :time1,
                  :git
 

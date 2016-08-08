@@ -3,7 +3,7 @@ class EnhancedPrompt::Prompt
 
     def default
       (user + '@' + ip + ' ' + dir + "\n" + '->')
-        .c(:white).bg.(:dodgerblue)
+        .c(:white).bg(:dodgerblue)
     end
 
   end
