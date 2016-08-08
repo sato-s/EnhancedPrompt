@@ -68,9 +68,6 @@ describe Prompt do
   it 'show private ipv4 addr' do
     expect(prompt.ipv4).to match /\A(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\Z/
   end
-  it 'cant show global ipv6 addr' do
-    expect(prompt.global_ipv6).to match "No global_ipv6"
-  end
   it 'show hostname' do
     expect(prompt.host_full).to match `hostname`.chomp
   end
