@@ -29,24 +29,24 @@ describe EnhancedPrompt::Prompt::Token::Dir do
         expect(dir.dir_full).to eq Pathname.new('/home/user/workspace/project/com/example/project/database/this/dir/is/too/long/to/print/in/prompt')
       end
     end
-    describe '#dir_abbreviated2 7' do
+    describe '#dir_abbreviated1 7' do
       it 'omit path name > limit ' do
-        expect(dir.dir_abbreviated2(7)).to eq Pathname.new('.../prompt')
+        expect(dir.dir_abbreviated1(7)).to eq Pathname.new('.../prompt')
       end
       it 'omit path name > limit 8' do
-        expect(dir.dir_abbreviated2(8)).to eq Pathname.new('.../in/prompt')
+        expect(dir.dir_abbreviated1(8)).to eq Pathname.new('.../in/prompt')
       end
       it 'omit path name > limit 9' do
-        expect(dir.dir_abbreviated2(9)).to eq Pathname.new('.../in/prompt')
+        expect(dir.dir_abbreviated1(9)).to eq Pathname.new('.../in/prompt')
       end
       it 'omit path name > limit 100' do
-        expect(dir.dir_abbreviated2(10)).to eq Pathname.new('.../in/prompt')
+        expect(dir.dir_abbreviated1(10)).to eq Pathname.new('.../in/prompt')
       end
       it 'Do nothing if path < limit 5000' do
-        expect(dir.dir_abbreviated2(5000)).to eq Pathname.new('/home/user/workspace/project/com/example/project/database/this/dir/is/too/long/to/print/in/prompt')
+        expect(dir.dir_abbreviated1(5000)).to eq Pathname.new('/home/user/workspace/project/com/example/project/database/this/dir/is/too/long/to/print/in/prompt')
       end
       it 'just show current dir if limit is too shot limit' do
-        expect(dir.dir_abbreviated2(3)).to eq Pathname.new('.../prompt')
+        expect(dir.dir_abbreviated1(3)).to eq Pathname.new('.../prompt')
       end
     end
 

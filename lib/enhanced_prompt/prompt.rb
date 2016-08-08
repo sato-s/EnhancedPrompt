@@ -36,12 +36,13 @@ class EnhancedPrompt::Prompt
                  :other_users_count,:login_count,:my_login_count,:other_login_count,
                  :uid,:gid,
                  :users_count_scale1, # TODO : should be method missing to ***_scale?
-                 :dir_abbreviated2,
-                :time1,
+                 :dir_abbreviated1,
+                 :time1,
                  :git
 
   def_delegators :@token,:my_login_count_scale
   # User friendly aliases
+  def_delegator :@token, :dir_abbreviated1, :dir
   def_delegator :@token, :ipv4, :ip
   def_delegator :@token, :hostname_full, :host_full
   def_delegator :@token, :hostname, :host
