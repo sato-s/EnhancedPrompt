@@ -33,7 +33,7 @@ time1.c(:red).bg(:black) + '  ' + user.c(:blue) + '@' + host.c(:orange) +
 
 You will see something like this. 
 
-![sample prompt](sample1.png)
+![sample prompt](sample1.png =250x)
 
 ### Tokens
 
