@@ -32,6 +32,12 @@ elsif $options[:colors] then
     print EnhancedPrompt.run{":"+color.to_s+" => "+ "      ".bg(color)+"\n"}
   }
 else
-  print EnhancedPrompt.run('default')
+  # Here we show PS1 prompt
+  file = File.join(ENV['HOME'],'/.enhanced-prompt')
+  if File.exists? file then
+    print EnhancedPrompt.run(File.open(file){|f| f.read})
+  else
+    print EnhancedPrompt.run('default')
+  end
 end
 
