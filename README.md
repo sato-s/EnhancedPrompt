@@ -8,9 +8,9 @@
 
 ## Installation
 
-```bash
-gem install enhanced_prompt
-```
+Currently, this gem is not registered to ruby-gem.org.  
+See Development to install this gem.  
+After that, set enhanced-prompt as your PROMPT_COMMAND.
 
 ```bash
 cat << EOF > ~/.bashrc
