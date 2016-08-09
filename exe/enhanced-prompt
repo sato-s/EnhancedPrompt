@@ -21,26 +21,17 @@ OptionParser.new do |opts|
   end
 end.parse!
 
-code=ARGV[0]
 
-if $options[:help] then
+if $options[:tokens] then
   EnhancedPrompt::Prompt.instance_methods(false).sort.each do |met|
     name = met.to_s
     print EnhancedPrompt.run("%Q|#{name}|.c(:red)+' => '+ #{met} + %|\n|" )
   end
-elsif $options[:colors] && $options[:tokens].nil? &&code.nil? then
-  EnhancedPrompt::StringExtension::ColorTable.color_table.each_key{|color|
+elsif $options[:colors] then
+  Rainbow::Color::X11Named.color_names.each{|color|
     print EnhancedPrompt.run{":"+color.to_s+" => "+ "      ".bg(color)+"\n"}
   }
 else
-  code ||= 'default'
-  if $options[:debug]
-   p EnhancedPrompt.run(code)
-  end
-  print EnhancedPrompt.run(code)
+  print EnhancedPrompt.run('default')
 end
 
-=begin
-export PROMPT_COMMAND='/home/sato/work/enhanced_prompt/bin/eprompt "default"'
-export PS1=''
-=end
