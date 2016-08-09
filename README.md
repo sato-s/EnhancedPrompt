@@ -43,9 +43,9 @@ Run ```enhanced-prompt --tokens``` to check available tokens
 
 You can change foreground/background color or toggle underbar with the following methods
 
-- #c(color)
-- #bg(color)
-- #_
+- c(color)
+- bg(color)
+- _
 
 You can check available colors with ```enhanced-prompt --colors```
 
