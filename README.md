@@ -1,61 +1,51 @@
 # EnhancedPrompt
 
-In progress...............................................
-
-
 ## Features
 
-- Provides rich shell prompt
-- Helpful information including IP, git branch, nicely abbreviated path name
-- Can choose from a bunch of pre-defied shell prompt style
 - Extremely flexible running as ruby internal DSL
+- Helpful information including IP, git branch, nicely abbreviated path name
 - Can change colors in simple syntax (thanks to Rainbow) 
-
 
 ## Installation
 
-```
+```bash
 gem install enhanced_prompt
 ```
 
-```
+```bash
 cat << EOF > ~/.bashrc
-export PROMPT_COMMAND='eprompt default2'
-export PS1=' '
+export PROMPT_COMMAND='enhanced-prompt'
+export PS1=''
 EOF
 ```
 
+## Customize
 
+By default, you will see enhanced-prompt default style.  
+You can configure this with ~/.enhanced-prompt file.  
 
+For instance, if you create the following ~/.enhanced-prompt file.  
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'enhanced_shell_ps1'
+```ruby 
+time1.c(:red).bg(:black) + '  ' + user.c(:blue) + '@' + host.c(:orange) +                                                                                                                     
+'(' + ip.c(:purple) + ')' + '  ' + git.c(:indigo)._  + ' ' + dir + ' $ '
 ```
 
-eprompt(){
-/home/sato/work/enhanced_prompt/bin/eprompt "default";
-}
+You will see something like this. 
 
-export PROMPT_COMMAND=''
-export PS1="$(eprompt)"
+![sample prompt](sample1.png)
 
-export PROMPT_COMMAND='eprompt default2'
-export PS1=' '
+### Tokens
 
+Run ```enhanced-prompt --colors``` to check available tokens
 
-And then execute:
+### Color / Style
 
-    $ bundle
+You can change foreground/background color or toggle underbar with the following methods
 
-Or install it yourself as:
-
-    $ gem install enhanced_shell_ps1
-
-## Usage
-
-TODO: Write usage instructions here
+- #c(color)
+- #bg(color)
+- #_
 
 ## Development
 
