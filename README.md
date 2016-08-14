@@ -64,3 +64,6 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
+## Code Status
+
+[![Code Climate](https://codeclimate.com/github/sato-s/EnhancedPrompt/badges/gpa.svg)](https://codeclimate.com/github/sato-s/EnhancedPrompt)
