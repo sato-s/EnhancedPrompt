@@ -66,4 +66,5 @@ The gem is available as open source under the terms of the [MIT License](http://
 
 ## Code Status
 
+[![Build Status](https://travis-ci.org/sato-s/EnhancedPrompt.svg?branch=master)](https://travis-ci.org/sato-s/EnhancedPrompt)
 [![Code Climate](https://codeclimate.com/github/sato-s/EnhancedPrompt/badges/gpa.svg)](https://codeclimate.com/github/sato-s/EnhancedPrompt)
