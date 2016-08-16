@@ -6,7 +6,7 @@ require 'enhanced_prompt/version'
 Gem::Specification.new do |spec|
   spec.name          = "enhanced_prompt"
   spec.version       = EnhancedPrompt::VERSION
-  spec.authors       = ["sato"]
+  spec.authors       = ["sato-s"]
   spec.email         = ["s.sato.desu@gmail.com"]
 
   spec.summary       = %q{You can use/customize cool prompt (PS1 in bash)}
