@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["s.sato.desu@gmail.com"]
 
   spec.summary       = %q{You can use/customize cool prompt (PS1 in bash)}
-  spec.description   = %q{enhanced_prompt provide many pre-defined cool prompt. you can also make your own colorful/useful prompt }
-  spec.homepage      = "http://bundler.io/git.html"
+  spec.description   = %q{DSL to write cool prompt.}
+  spec.homepage      = "https://github.com/sato-s/EnhancedPrompt"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
